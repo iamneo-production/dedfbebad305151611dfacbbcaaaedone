@@ -27,6 +27,7 @@ clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, 
     [HttpPost]
 public async Task<IActionResult> AddCustomer(Customer customer)
 {
+    Console.WriteLine("Error: " + customer);
     try
     {
         if (!ModelState.IsValid)
